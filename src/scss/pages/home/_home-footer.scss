@@ -1,0 +1,37 @@
+.home-footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    .footer-link {
+        text-decoration: none;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 100%;
+        color: #FF9A02;
+        margin-top: 10rem;
+        span {
+            margin-left: 1rem;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-footer {
+        .footer-link {
+            margin-top: 7rem;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .home-footer {
+        .footer-link {
+            margin-top: 5rem;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.home {
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 320px) {
+    .home {
+        width: 90%;
+    }
+}
+
+@import './pages/home/home-body';
+@import './pages/home/home-head';
+@import './pages/home/home-footer';
+
+
+
+
+
+

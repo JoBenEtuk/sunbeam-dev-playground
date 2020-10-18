@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sunbeam-dev-playground"
+    }
+  },
+  "defaultProject": "sunbeam-dev-playground",
+  "cli": {
+    "analytics": "3baa9630-e3e8-4e51-9c8b-1e4fcc325554"
+  }
 }

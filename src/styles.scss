@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+// Main styles go here
+html {
+    font-family: sen;
+}
+@import './scss/resets';
+@import './scss/error-page';
+@import './scss/header';
+@import './scss/footer';
+@import './scss/home';
+@import './scss/widgets';
+@import './scss/pages/page-details';
+@import './scss/pages/new-article'

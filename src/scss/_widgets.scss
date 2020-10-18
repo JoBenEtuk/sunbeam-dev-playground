@@ -1,0 +1,105 @@
+  .highlight {
+    color: #231F20;
+    text-decoration: none;
+    background-color: #FFDA68;
+    border-radius: 60px;
+    padding: 20px 30px;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 18px;
+    width: 173px;
+    height: 58px;
+    white-space: nowrap;
+    overflow: hidden;
+    span{
+        padding-left: 15px;
+        color: #000000;
+        font-family: serif;
+        font-weight: 800;
+    }
+        &:hover {
+          background-color: #fcca36;
+          transform: scale(1.01);
+      }
+  }
+
+  .mini-highlight {
+      text-decoration: none;
+      padding: 5px 10px;
+      background: #FFD540;
+      white-space: nowrap;
+      overflow: hidden;
+      font-weight: bold;
+      font-size: 10px;
+      border-radius: 40px;
+      color: #111111;
+  }
+
+  .new {
+    color: #FF9A02;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    &:hover {
+      color: #ff7c02;
+    }
+}
+
+.aside {
+  color: #111111;
+    .aside-date {
+        margin-right: .5em;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 1024px){
+    .highlight {
+         border-radius: 40px;
+         padding: 15px 25px;
+         width: 173px;
+         height: 58px;
+         span {
+             padding-left: 10px;
+         }
+     }
+    .mini-highlight {
+         padding: 3px 7px;
+         font-size: 10px;
+         border-radius: 20px;
+     }
+}
+@media (max-width: 768px){
+    .highlight {
+        border-radius: 30px;
+        padding: 10px 20px;
+        width: 150px;
+        height: 45px;
+        span {
+            padding-left: 10px;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .highlight {
+     border-radius: 20px;
+     padding: 8px 18px;
+     width: 120px;
+     height: 35px;
+     font-size: 14px;
+     margin-bottom: 1rem;
+     span {
+         padding-left: 8px;
+     }
+    }    
+    .mini-highlight {
+        text-decoration: none;
+        padding: 3px 7px;
+        font-size: 9px;
+        border-radius: 20px;
+    }
+    .new {
+      font-size: 11px;
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+    font-family: Sen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 140%;
+    color: #000000;
+    opacity: 0.6;
+    margin-top: 10rem;
+  }
+
+  @media (max-width: 1024px) {
+    .footer {
+      margin-top: 8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      margin-top: 5rem;
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer {
+      font-size: 0.625rem;
+    }
+  }

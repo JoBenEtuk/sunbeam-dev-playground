@@ -1,0 +1,53 @@
+.head-logo {
+    width: 52%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    padding-top: 4em;
+}
+.back-arrow {
+    width: 30px;
+    padding-top: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .head-logo {
+        width: 65%;
+        .logo {
+            width: 90px;
+            height: 65px;
+        }
+        .back-arrow {
+            padding-top: 1.2rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .head-logo {
+        width: 70%;
+        .logo {
+            width: 70px;
+            height: 55px;
+        }
+        .back-arrow {
+            width: 22px;
+            padding-top: 1rem;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .head-logo {
+        width: 85%;
+        .logo {
+            width: 50px;
+            height: 35px;
+        }
+        .back-arrow {
+            padding-top: 0.4rem;
+        }
+    }
+}

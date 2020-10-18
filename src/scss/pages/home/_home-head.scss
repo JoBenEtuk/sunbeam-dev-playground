@@ -1,0 +1,77 @@
+.home-head {
+    padding-top: 4rem;
+    margin: auto;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .home-head-text {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        h2{
+            text-align: center;
+            width: 70%;
+            margin: auto;
+            font-size: 2.75rem;
+            line-height: 140%;
+            font-weight: 800;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: url(../../../assets/svg/double-quotes.svg) no-repeat;
+                background-size: contain;
+
+            }
+        }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .home-head {
+        .home-head-text {
+            h2 {
+                width: 80%;
+                line-height: 120%;
+            }
+        }
+    }
+}
+
+  @media (max-width: 768px) {
+    .home-head {
+        .home-head-text {
+            h2 {
+                width: 100%;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .home-head {
+        .home-head-text {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            h2 {
+                font-size: 1.75rem;
+                line-height: 110%;
+            }
+        }
+    }
+}
+  @media (max-width: 320px) {
+      .home-head {
+          .home-head-text {
+              h2 {
+                  font-size: 1.5rem;
+                  line-height: 100%;
+              }
+          }
+      }
+  }

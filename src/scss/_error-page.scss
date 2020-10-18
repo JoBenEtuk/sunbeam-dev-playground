@@ -1,0 +1,56 @@
+.error {
+    width: 60%;
+    margin: auto;
+    .error-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Sen;
+        .number {
+            font-size: 10em;
+        }
+        .text {
+            font-size: 1em;
+        }
+    }
+    
+    .error-return {
+        background-image: linear-gradient(to bottom right, #ffd540, #ec6f08);
+        border: none;
+        padding: 1em;
+        margin-top: 3em;
+        font-weight: bold;
+        font-size: 16px;
+        &:hover, &:focus, &:active {
+        background-image: linear-gradient(to bottom right,  #ec6f08, #ffd540);
+        }
+        .error-link {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .error {
+        width: 90%;
+        .error-page {
+            width: 80%;
+            margin: auto;
+            .number{
+                font-size: 7em;
+            }
+            .text {
+                font-size: .8em;
+                margin-bottom: 2em;
+            }
+        }
+        .error-return {
+            padding: .7em;
+            margin: auto;
+            font-size: 13px;
+        }
+    }
+}

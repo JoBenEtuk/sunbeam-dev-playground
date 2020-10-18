@@ -1,0 +1,50 @@
+<div class="new-article-body">
+    <form #userForm="ngForm" (ngSubmit)='onSubmit()' novalidate>
+        <div class="alert alert-danger" *ngIf ="errorMsg">
+            {{errorMsg}}
+        </div>
+        <div class="alert alert-success" *ngIf ="errorMsg">
+            {{successMsg}}
+        </div>
+
+        <div class="new-article-image">
+            <input type = "image" id="inputImg" class="form-control-image" required name="images" [(ngModel)]="articleModel.images"/><span><img src="../../../../assets/svg/x.svg" alt="X"></span>
+        </div>
+
+        <p>
+            <label>Article Title <span class="star">&#8727;</span></label>
+            <input type = "text" class="form-control-title"  required placeholder = "Awesome Blog Article" name="head" [(ngModel)]="articleModel.head"/>
+        </p>
+        
+        <p class="text-area">
+            <label>Content <span class="star">&#8727;</span></label>
+            <editor
+                apiKey="9ab1daaccrateig2qdcohd4toriis4eqbzmwmuaz1t1ngsim" name="body" required [(ngModel)]="articleModel.body"
+            ></editor>
+        </p>
+
+        <p>
+            <label>Date <span class="star">&#8727;</span></label>
+            <input type = "text" class="form-control" required placeholder="1st January, 2000" name ="date" [(ngModel)]="articleModel.date"/>
+        </p>
+        <p>
+            <label>Article Tag <span class="star">&#8727;</span></label>
+            <input type = "text" class="form-control" required placeholder="Enter Tag e.g UX Writing" name="highlight" [(ngModel)]="articleModel.highlight"/>
+        </p>
+        <p>
+            <label> Link <span class="star">&#8727;</span></label>
+            <input type = "text" class="form-control" required #authorsName = ngModel placeholder="/article" name ="link" [(ngModel)]="articleModel.link"/>
+        </p>
+
+        <app-input-bot-checker (checked)="botChecked($event)"></app-input-bot-checker>
+        <button [disabled]="userForm.form.invalid" class="submit-button" type="submit">Save & Publish
+            <span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 7.05303V8.94697H11.8636L6.6553 14.1553L8 15.5L15.5 8L8 0.5L6.6553 1.8447L11.8636 7.05303H0.5Z" fill="black"/>
+            </svg>
+            </span>
+        </button>
+    </form>
+</div>
+
+<!-- *ngIf ="!submitted" -->
